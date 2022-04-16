@@ -2,7 +2,28 @@
     padding: 0px;
     margin: 0px;
 }
-.header-top h1{
-    color: #1d81d8;
+li{
+    list-style: none;
 }
 
+output{
+    border:solid 1px #000000;
+}
+header{
+    max-width: 1170px;
+    border: solid 1px #000000;
+    display: flex;
+}
+.header-top p{
+    margin:03px;
+}
+.header-sab ul{
+    display: flex;
+}
+.header-right{
+    justify-content: right;
+}
+.header-icon img {
+    width:150px;
+    height:150px;
+}
