@@ -8,23 +8,20 @@
     <title>URL順位チェッカー</title>
 </head>
 <body>
-<header>
+<header class="header-main">
     <div class="header-top">
         <p>順位チェッカー</p>
-
     </div>
-    <div class="header-right">
-        <div class="header-sab">
-            <ul>
-                <li>web版</li>
-                <li>youtube</li>
-                <li>お問い合わせ</li>
-            </ul>
-        </div>
-        <div calss="header-icon">
-            <img src="image/aicon.jpg" alt="画像">
-        </div> 
+    
+    <div class="header-sab">
+        <ul>
+            <li><a href="index.php">web版</a></li>
+            <li><a href="">youtube</a></li>
+            <li><a href="">お問い合わせ</a></li>
+            <li><img class="header-sab-image" src="image/aicon.jpg" alt="画像"></li>
+        </ul>
     </div>
+    
 </header>
 <main>
     <div class="Input-field">
@@ -53,6 +50,5 @@
 
     </div>
 </main>
-
 </body>
 </html>

@@ -5,25 +5,39 @@
 li{
     list-style: none;
 }
+a{
+    cursor: pointer;
+    text-decoration: none;
+    color: #000;
+}
 
 output{
     border:solid 1px #000000;
 }
-header{
-    max-width: 1170px;
-    border: solid 1px #000000;
+.header-main{
     display: flex;
+    max-width: 1280px;
+    background-color: aqua;
 }
-.header-top p{
-    margin:03px;
+.header-top{
+    padding:1%;
+}
+
+.header-sab-image{
+    width:20px;
+    height:20px;
+    border-radius: 50%;
+    display: inline-block;
+}
+.header-top h1{
+    display: inline-block;
 }
 .header-sab ul{
     display: flex;
+    text-align: right;
 }
-.header-right{
-    justify-content: right;
+.header-sab li{
+    padding:10px;
+    display: inline-block;
 }
-.header-icon img {
-    width:150px;
-    height:150px;
-}
+
