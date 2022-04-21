@@ -1,43 +1,13 @@
 *{
-    padding: 0px;
-    margin: 0px;
-}
-li{
-    list-style: none;
-}
-a{
-    cursor: pointer;
-    text-decoration: none;
-    color: #000;
-}
-
-output{
-    border:solid 1px #000000;
-}
-.header-main{
-    display: flex;
-    max-width: 1280px;
-    background-color: aqua;
+    padding :0px;
+    margin:0px;
 }
 .header-top{
-    padding:1%;
-}
-
-.header-sab-image{
-    width:20px;
-    height:20px;
-    border-radius: 50%;
-    display: inline-block;
-}
-.header-top h1{
-    display: inline-block;
-}
-.header-sab ul{
     display: flex;
+    
+}
+.header-form{
+    margin: 15px 10px;
+    display: inline;
     text-align: right;
 }
-.header-sab li{
-    padding:10px;
-    display: inline-block;
-}
-
