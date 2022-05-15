@@ -1,3 +1,7 @@
+<?php 
+require_once('dbc.php');
+?>
+
 <!DOCTYPE html>
 <html lang="jp">
 <head>
@@ -10,53 +14,55 @@
 <body>
 
 <header class="header-main">
-<h1>GameSns</h1>
-    <div class="header-top">
+    <h1>GameSns</h1>
+    <div class="header-main-dm">
         
-        <a href="login.php"><img class="icon" src="image/aicon.jpg" alt="アイコン"></a>
     </div>
-    
-    
 </header>
 <main>
     <div class="side-left">
         <p>home</p>
-        <p>profile</p>
+        <a href="login.php"><img class="icon" src="image/aicon.jpg" alt="アイコン"></a>
         <p>DM</p>
+        <p>大会を<br>探す</p>
     </div>
     <div class="main-home">
         <div class="main-post">
+            <p>投稿</p>
             <form action="index.php" method="POST">
-                <input type="search" name="search">
+                <input type="text" name="gamename">
                 <select name="format">
-                    <option value="none">形式未選択</option>
-                    <option value="single">シングル</option>
-                    <option value="duo">デュオ</option>
-                    <option value="squat">スクワット</option>
-                    <option value="quintet">クインテット</option>
+                    <option value="1">形式未選択</option>
+                    <option value="2">シングル</option>
+                    <option value="3">デュオ</option>
+                    <option value="4">スクワット</option>
+                    <option value="5">クインテット</option>
                 </select>
                 <input type="datetime-local" name="time" value="time">
                 <br>
                 <textarea name="tweet"value="test"maxlength="150"></textarea>
-                <input type="submit" value="送信">
+                <a href="memo.php"></a><input type="submit" value="送信"></a>
+
             </form>
+            <?php require_once('formtest.php'); ?>
         
         </div>
-        <div class="timefrom">
-            <?php $search =$_POST['search'];?>
-            <p><?php echo $search; ?></p>
+        <div class=timeline>
+            <p>タイムライン</p>
+            <div class= search-timeline>
+                <img class=icon src="image/aicon.jpg" alt="aicon">
+                <p >ゲーム名<span>
 
-            <?php $format=$_POST['format'];?>
-            <p><?php echo $format; ?></p>
-
-            <?php $time=$_POST['time'];?>
-            <p><?php echo $time; ?></p>
-
-            <?php $tweet=$_POST['tweet'];?>
-            <p><?php echo $tweet; ?></p>
+                </span></p>
+                <p>荒野行動</p>  
+            </div>
+            <div class=search-timeline>
+                <p>日付</p>
+                <p>xxxx年xx月xx日</p>   
+            </div>
+            <p maxlength="150">ここにテキストここにテキストここにテキストここにテキスト</p>
         </div>
-
-
+        
     </div>
     
 </main>
