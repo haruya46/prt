@@ -1,20 +1,26 @@
 <?php 
+
 require_once('index.php');
+require_once('tweet.php');
 //エラーメッセージ
     $err= [];
-    
+    //sqlに送信する間に内容があってるのか確認する処理
     //バリデーション
     if(!$gamename=filter_input(INPUT_POST,'gamename')){
         $err[]='ゲーム名を記入してください';
-    }
-    if(!$format=filter_input(INPUT_POST,'format')>1){
-        $err[]='形式を選択してください';
     }
     if(!$time=filter_input(INPUT_POST,'time')){
         $err[]='日時を指定してください';
     }
     if(!$tweet=filter_input(INPUT_POST,'tweet')){
         $err[]='本文を記入してください';
+    }
+    if (count($err)===0){
+        //SQｌに登録する処理
+        $hasCreated = tweet::createTweet($_POST);
+        if(!$hasCreated){
+            $err[]='登録に失敗しました';
+        }
     }
 
 ?>

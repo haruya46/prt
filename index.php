@@ -32,16 +32,15 @@ require_once('dbc.php');
             <form action="index.php" method="POST">
                 <input type="text" name="gamename">
                 <select name="format">
-                    <option value="1">形式未選択</option>
-                    <option value="2">シングル</option>
-                    <option value="3">デュオ</option>
-                    <option value="4">スクワット</option>
-                    <option value="5">クインテット</option>
+                    <option value="シングル">シングル</option>
+                    <option value="デュオ">デュオ</option>
+                    <option value="スクワット">スクワット</option>
+                    <option value="クインテット">クインテット</option>
                 </select>
                 <input type="datetime-local" name="time" value="time">
                 <br>
                 <textarea name="tweet"value="test"maxlength="150"></textarea>
-                <a href="memo.php"></a><input type="submit" value="送信"></a>
+                <input type="submit" value="送信">
 
             </form>
             <?php require_once('formtest.php'); ?>
@@ -49,8 +48,10 @@ require_once('dbc.php');
         </div>
         <div class=timeline>
             <p>タイムライン</p>
+            <?php require_once('tweetText.php') ?>
             <div class= search-timeline>
                 <img class=icon src="image/aicon.jpg" alt="aicon">
+            
                 <p >ゲーム名<span>
 
                 </span></p>
@@ -60,6 +61,10 @@ require_once('dbc.php');
                 <p>日付</p>
                 <p>xxxx年xx月xx日</p>   
             </div>
+            <?php 
+                require_once('tweetText.php');
+                echo $tweet;
+                ?>
             <p maxlength="150">ここにテキストここにテキストここにテキストここにテキスト</p>
         </div>
         
