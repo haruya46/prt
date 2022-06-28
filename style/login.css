@@ -1,0 +1,63 @@
+*{
+    padding: 0%;
+    margin: 0px;
+}
+.login{
+    text-align: center;
+    margin-top: 20px;
+}
+
+.login-id{
+    display: block;
+    margin: auto;
+    margin-top:20px;
+    width: 90%;
+    border: solid #000 2px;
+    font-size: 15px;
+}
+.login-pass{
+    display: block;
+    margin:auto;
+    margin-top:20px;
+    width:90%;
+    border: solid #000 2px;
+    font-size: 15px;
+}
+.login-keep{
+    display: block;
+    margin: auto;
+    margin-top:20px;
+    font-size: 15px;
+}
+.login-new{
+    text-align: center;
+    margin-top:20px;
+    font-size: 15px;
+}
+.new-login{
+    text-align: center;
+    margin-top: 20px;
+}
+.newmail{
+    display: block;
+    margin: auto;
+    margin-top:20px;
+    width:90%;
+    border: solid #000 2px;
+    font-size: 15px;
+}
+.newpass{
+    display: block;
+    margin: auto;
+    margin-top:20px;
+    width:90%;
+    border: solid #000 2px;
+    font-size: 15px;
+}
+.new-keep{
+    display: block;
+    margin: auto;
+    margin-top:20px;
+    font-size: 15px;
+}
+
